@@ -1,0 +1,771 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Nov  9 13:01:51 2019] ***
+compiled with version: 7.4.0 on 24 October 2019 08:58:30
+os: Linux-5.0.0-32-generic #34~18.04.2-Ubuntu SMP Thu Oct 10 10:36:02 UTC 2019
+nodename: tarena
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/tarena/aid1907/ht2048
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/aid1907/ht2048
+your processes number limit is 15012
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:34789 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+Python main interpreter initialized at 0x558b8bb32050
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166688 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 4 seconds on interpreter 0x558b8bb32050 pid: 14276 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 14276)
+spawned uWSGI worker 1 (pid: 14278, cores: 2)
+spawned uWSGI http 1 (pid: 14280)
+get nadao map [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+start nadao map [[0, 0, 0, 0], [0, 0, 0, 0], [2, 0, 0, 0], [2, 0, 0, 0]]
+[pid: 14278|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 753 bytes} [Sat Nov  9 13:02:24 2019] GET /ht2048/ => generated 13267 bytes in 310 msecs (HTTP/1.1 200) 5 headers in 279 bytes (1 switches on core 0)
+Not Found: /static/js/common.js
+[pid: 14278|app: 0|req: 2/2] 127.0.0.1 () {42 vars in 727 bytes} [Sat Nov  9 13:02:25 2019] GET /static/js/common.js => generated 2094 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/js/jquery-1.11.3.js
+[pid: 14278|app: 0|req: 3/3] 127.0.0.1 () {42 vars in 741 bytes} [Sat Nov  9 13:02:25 2019] GET /static/js/jquery-1.11.3.js => generated 2115 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 14278|app: 0|req: 4/4] 127.0.0.1 () {40 vars in 677 bytes} [Sat Nov  9 13:02:25 2019] GET /favicon.ico => generated 2070 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+get nadao map [[0, 0, 0, 0], [0, 0, 0, 0], [2, 0, 0, 0], [2, 0, 0, 0]]
+start nadao map [[0, 0, 0, 0], [2, 0, 0, 2], [0, 0, 0, 0], [0, 0, 0, 0]]
+[pid: 14278|app: 0|req: 5/5] 127.0.0.1 () {42 vars in 753 bytes} [Sat Nov  9 13:02:31 2019] GET /ht2048/ => generated 13267 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 279 bytes (1 switches on core 1)
+Not Found: /static/js/common.js
+Not Found: /static/js/jquery-1.11.3.js
+[pid: 14278|app: 0|req: 7/6] 127.0.0.1 () {42 vars in 725 bytes} [Sat Nov  9 13:02:31 2019] GET /static/js/common.js => generated 2094 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 14278|app: 0|req: 7/7] 127.0.0.1 () {42 vars in 740 bytes} [Sat Nov  9 13:02:31 2019] GET /static/js/jquery-1.11.3.js => generated 2115 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+[pid: 14278|app: 0|req: 8/8] 127.0.0.1 () {40 vars in 676 bytes} [Sat Nov  9 13:02:31 2019] GET /favicon.ico => generated 2070 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 14280)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Nov  9 13:03:28 2019] ***
+compiled with version: 7.4.0 on 24 October 2019 08:58:30
+os: Linux-5.0.0-32-generic #34~18.04.2-Ubuntu SMP Thu Oct 10 10:36:02 UTC 2019
+nodename: tarena
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/tarena/aid1907/ht2048
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/aid1907/ht2048
+your processes number limit is 15012
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:39821 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+Python main interpreter initialized at 0x5594069b0050
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166688 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5594069b0050 pid: 14443 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 14443)
+spawned uWSGI worker 1 (pid: 14445, cores: 2)
+spawned uWSGI http 1 (pid: 14446)
+get nadao map [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+start nadao map [[0, 0, 0, 2], [0, 0, 0, 0], [0, 2, 0, 0], [0, 0, 0, 0]]
+[pid: 14445|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 753 bytes} [Sat Nov  9 13:03:31 2019] GET /ht2048/ => generated 13267 bytes in 30 msecs (HTTP/1.1 200) 5 headers in 279 bytes (1 switches on core 0)
+Not Found: /static/js/jquery-1.11.3.js
+Not Found: /static/js/common.js
+[pid: 14445|app: 0|req: 3/2] 127.0.0.1 () {42 vars in 741 bytes} [Sat Nov  9 13:03:31 2019] GET /static/js/jquery-1.11.3.js => generated 2115 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 14445|app: 0|req: 3/3] 127.0.0.1 () {42 vars in 727 bytes} [Sat Nov  9 13:03:31 2019] GET /static/js/common.js => generated 2094 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/js/jquery-1.11.3.js
+[pid: 14445|app: 0|req: 4/4] 127.0.0.1 () {42 vars in 741 bytes} [Sat Nov  9 13:03:31 2019] GET /static/js/jquery-1.11.3.js => generated 2115 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 14445|app: 0|req: 5/5] 127.0.0.1 () {40 vars in 677 bytes} [Sat Nov  9 13:03:31 2019] GET /favicon.ico => generated 2070 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 14446)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Nov  9 13:09:28 2019] ***
+compiled with version: 7.4.0 on 24 October 2019 08:58:30
+os: Linux-5.0.0-32-generic #34~18.04.2-Ubuntu SMP Thu Oct 10 10:36:02 UTC 2019
+nodename: tarena
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/tarena/aid1907/ht2048
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/aid1907/ht2048
+your processes number limit is 15012
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:42509 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55c92be88050
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166688 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55c92be88050 pid: 14549 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 14549)
+spawned uWSGI worker 1 (pid: 14551, cores: 2)
+spawned uWSGI http 1 (pid: 14553)
+get nadao map [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+start nadao map [[0, 0, 0, 2], [0, 2, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+[pid: 14551|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 753 bytes} [Sat Nov  9 13:09:31 2019] GET /ht2048/ => generated 13267 bytes in 34 msecs (HTTP/1.1 200) 5 headers in 279 bytes (1 switches on core 0)
+[pid: 14551|app: 0|req: 3/2] 127.0.0.1 () {42 vars in 727 bytes} [Sat Nov  9 13:09:31 2019] GET /static/js/common.js => generated 93 bytes in 30 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 14551|app: 0|req: 3/3] 127.0.0.1 () {42 vars in 741 bytes} [Sat Nov  9 13:09:31 2019] GET /static/js/jquery-1.11.3.js => generated 100 bytes in 30 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 14551|app: 0|req: 4/4] 127.0.0.1 () {40 vars in 677 bytes} [Sat Nov  9 13:09:31 2019] GET /favicon.ico => generated 85 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 14553)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Nov  9 13:11:14 2019] ***
+compiled with version: 7.4.0 on 24 October 2019 08:58:30
+os: Linux-5.0.0-32-generic #34~18.04.2-Ubuntu SMP Thu Oct 10 10:36:02 UTC 2019
+nodename: tarena
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/tarena/aid1907/ht2048
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/aid1907/ht2048
+your processes number limit is 15012
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55e2daf12f30
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166688 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55e2daf12f30 pid: 14614 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 14614)
+spawned uWSGI worker 1 (pid: 14616, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+get nadao map [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+start nadao map [[2, 0, 0, 0], [0, 0, 0, 2], [0, 0, 0, 0], [0, 0, 0, 0]]
+[pid: 14616|app: 0|req: 1/1] 127.0.0.1 () {46 vars in 792 bytes} [Sat Nov  9 13:11:31 2019] GET /ht2048/ => generated 13267 bytes in 29 msecs (HTTP/1.1 200) 5 headers in 279 bytes (1 switches on core 1)
+[pid: 14616|app: 0|req: 2/2] 127.0.0.1 () {44 vars in 716 bytes} [Sat Nov  9 13:11:31 2019] GET /favicon.ico => generated 85 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Nov  9 13:15:53 2019] ***
+compiled with version: 7.4.0 on 24 October 2019 08:58:30
+os: Linux-5.0.0-32-generic #34~18.04.2-Ubuntu SMP Thu Oct 10 10:36:02 UTC 2019
+nodename: tarena
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/tarena/aid1907/ht2048
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/tarena/aid1907/ht2048
+your processes number limit is 15012
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55bdd70a6f30
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166688 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x55bdd70a6f30 pid: 14744 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 14744)
+spawned uWSGI worker 1 (pid: 14746, cores: 2)
+get nadao map [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+start nadao map [[0, 0, 0, 0], [0, 0, 0, 0], [0, 2, 0, 0], [0, 0, 2, 0]]
+[pid: 14746|app: 0|req: 1/1] 127.0.0.1 () {46 vars in 792 bytes} [Sat Nov  9 13:16:09 2019] GET /ht2048/ => generated 13267 bytes in 525 msecs (HTTP/1.1 200) 5 headers in 279 bytes (1 switches on core 0)
+[pid: 14746|app: 0|req: 2/2] 127.0.0.1 () {44 vars in 716 bytes} [Sat Nov  9 13:16:10 2019] GET /favicon.ico => generated 85 bytes in 91 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 0, 0], [0, 0, 0, 0], [0, 2, 0, 0], [0, 0, 2, 0]]
+{'val': [[0, 0, 0, 0], [0, 0, 0, 0], [0, 2, 0, 2], [0, 0, 0, 2], 6]}
+[pid: 14746|app: 0|req: 3/3] 127.0.0.1 () {46 vars in 760 bytes} [Sat Nov  9 13:16:14 2019] GET /ht2048/on/?on=right => generated 68 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 0, 0], [0, 0, 0, 0], [0, 2, 0, 2], [0, 0, 0, 2]]
+{'val': [[0, 2, 4, 4], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], 10]}
+[pid: 14746|app: 0|req: 4/4] 127.0.0.1 () {46 vars in 754 bytes} [Sat Nov  9 13:16:15 2019] GET /ht2048/on/?on=up => generated 69 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 2, 4, 4], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+{'val': [[2, 8, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 2], 12]}
+[pid: 14746|app: 0|req: 5/5] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:15 2019] GET /ht2048/on/?on=left => generated 69 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 8, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 2]]
+{'val': [[0, 0, 2, 0], [0, 0, 0, 0], [0, 0, 0, 0], [2, 8, 0, 2], 14]}
+[pid: 14746|app: 0|req: 6/6] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:15 2019] GET /ht2048/on/?on=down => generated 69 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 2, 0], [0, 0, 0, 0], [0, 0, 0, 0], [2, 8, 0, 2]]
+{'val': [[2, 0, 0, 2], [0, 0, 0, 0], [0, 0, 0, 0], [0, 2, 8, 2], 16]}
+[pid: 14746|app: 0|req: 7/7] 127.0.0.1 () {46 vars in 760 bytes} [Sat Nov  9 13:16:15 2019] GET /ht2048/on/?on=right => generated 69 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 0, 0, 2], [0, 0, 0, 0], [0, 0, 0, 0], [0, 2, 8, 2]]
+{'val': [[2, 2, 8, 4], [0, 0, 0, 0], [0, 0, 2, 0], [0, 0, 0, 0], 18]}
+[pid: 14746|app: 0|req: 8/8] 127.0.0.1 () {46 vars in 754 bytes} [Sat Nov  9 13:16:15 2019] GET /ht2048/on/?on=up => generated 69 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 2, 8, 4], [0, 0, 0, 0], [0, 0, 2, 0], [0, 0, 0, 0]]
+{'val': [[4, 8, 4, 0], [2, 0, 0, 0], [2, 0, 0, 0], [0, 0, 0, 0], 20]}
+[pid: 14746|app: 0|req: 9/9] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:16 2019] GET /ht2048/on/?on=left => generated 69 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[4, 8, 4, 0], [2, 0, 0, 0], [2, 0, 0, 0], [0, 0, 0, 0]]
+{'val': [[0, 0, 0, 0], [0, 0, 0, 2], [4, 0, 0, 0], [4, 8, 4, 0], 22]}
+[pid: 14746|app: 0|req: 10/10] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:16 2019] GET /ht2048/on/?on=down => generated 69 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 0, 0], [0, 0, 0, 2], [4, 0, 0, 0], [4, 8, 4, 0]]
+{'val': [[0, 0, 0, 0], [0, 0, 2, 2], [0, 0, 0, 4], [0, 4, 8, 4], 24]}
+[pid: 14746|app: 0|req: 11/11] 127.0.0.1 () {46 vars in 760 bytes} [Sat Nov  9 13:16:16 2019] GET /ht2048/on/?on=right => generated 69 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 0, 0], [0, 0, 2, 2], [0, 0, 0, 4], [0, 4, 8, 4]]
+{'val': [[0, 4, 2, 2], [0, 0, 8, 8], [0, 0, 0, 0], [0, 0, 0, 2], 26]}
+[pid: 14746|app: 0|req: 12/12] 127.0.0.1 () {46 vars in 754 bytes} [Sat Nov  9 13:16:16 2019] GET /ht2048/on/?on=up => generated 69 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 4, 2, 2], [0, 0, 8, 8], [0, 0, 0, 0], [0, 0, 0, 2]]
+{'val': [[4, 4, 0, 0], [16, 0, 2, 0], [0, 0, 0, 0], [2, 0, 0, 0], 28]}
+[pid: 14746|app: 0|req: 13/13] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:16 2019] GET /ht2048/on/?on=left => generated 70 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[4, 4, 0, 0], [16, 0, 2, 0], [0, 0, 0, 0], [2, 0, 0, 0]]
+{'val': [[0, 0, 0, 0], [4, 4, 0, 0], [16, 0, 0, 0], [2, 4, 2, 0], 32]}
+[pid: 14746|app: 0|req: 14/14] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:16 2019] GET /ht2048/on/?on=down => generated 70 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 0, 0], [4, 4, 0, 0], [16, 0, 0, 0], [2, 4, 2, 0]]
+{'val': [[0, 0, 0, 0], [0, 0, 0, 8], [2, 0, 0, 16], [0, 2, 4, 2], 34]}
+[pid: 14746|app: 0|req: 15/15] 127.0.0.1 () {46 vars in 760 bytes} [Sat Nov  9 13:16:17 2019] GET /ht2048/on/?on=right => generated 70 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 0, 0], [0, 0, 0, 8], [2, 0, 0, 16], [0, 2, 4, 2]]
+{'val': [[2, 2, 4, 8], [0, 0, 0, 16], [0, 2, 0, 2], [0, 0, 0, 0], 36]}
+[pid: 14746|app: 0|req: 16/16] 127.0.0.1 () {46 vars in 754 bytes} [Sat Nov  9 13:16:17 2019] GET /ht2048/on/?on=up => generated 70 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 2, 4, 8], [0, 0, 0, 16], [0, 2, 0, 2], [0, 0, 0, 0]]
+{'val': [[4, 4, 8, 0], [16, 0, 2, 0], [4, 0, 0, 0], [0, 0, 0, 0], 38]}
+[pid: 14746|app: 0|req: 17/17] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:17 2019] GET /ht2048/on/?on=left => generated 70 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[4, 4, 8, 0], [16, 0, 2, 0], [4, 0, 0, 0], [0, 0, 0, 0]]
+{'val': [[4, 0, 0, 0], [4, 0, 0, 0], [16, 0, 8, 0], [4, 4, 2, 0], 42]}
+[pid: 14746|app: 0|req: 18/18] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:17 2019] GET /ht2048/on/?on=down => generated 70 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[4, 0, 0, 0], [4, 0, 0, 0], [16, 0, 8, 0], [4, 4, 2, 0]]
+{'val': [[0, 0, 0, 4], [0, 0, 2, 4], [0, 0, 16, 8], [0, 0, 8, 2], 44]}
+[pid: 14746|app: 0|req: 19/19] 127.0.0.1 () {46 vars in 760 bytes} [Sat Nov  9 13:16:17 2019] GET /ht2048/on/?on=right => generated 70 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 0, 4], [0, 0, 2, 4], [0, 0, 16, 8], [0, 0, 8, 2]]
+{'val': [[0, 2, 2, 8], [0, 0, 16, 8], [0, 0, 8, 2], [0, 0, 0, 0], 46]}
+[pid: 14746|app: 0|req: 20/20] 127.0.0.1 () {46 vars in 754 bytes} [Sat Nov  9 13:16:17 2019] GET /ht2048/on/?on=up => generated 70 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 2, 2, 8], [0, 0, 16, 8], [0, 0, 8, 2], [0, 0, 0, 0]]
+{'val': [[4, 8, 0, 0], [16, 8, 0, 0], [8, 2, 4, 0], [0, 0, 0, 0], 50]}
+[pid: 14746|app: 0|req: 21/21] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:18 2019] GET /ht2048/on/?on=left => generated 70 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[4, 8, 0, 0], [16, 8, 0, 0], [8, 2, 4, 0], [0, 0, 0, 0]]
+{'val': [[0, 0, 0, 0], [4, 0, 0, 0], [16, 16, 0, 0], [8, 2, 4, 2], 52]}
+[pid: 14746|app: 0|req: 22/22] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:18 2019] GET /ht2048/on/?on=down => generated 71 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 0, 0], [4, 0, 0, 0], [16, 16, 0, 0], [8, 2, 4, 2]]
+{'val': [[0, 0, 0, 4], [0, 0, 0, 4], [0, 0, 0, 32], [8, 2, 4, 2], 56]}
+[pid: 14746|app: 0|req: 23/23] 127.0.0.1 () {46 vars in 760 bytes} [Sat Nov  9 13:16:18 2019] GET /ht2048/on/?on=right => generated 70 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 0, 4], [0, 0, 0, 4], [0, 0, 0, 32], [8, 2, 4, 2]]
+{'val': [[8, 2, 4, 8], [0, 0, 0, 32], [0, 0, 2, 2], [0, 0, 0, 0], 58]}
+[pid: 14746|app: 0|req: 24/24] 127.0.0.1 () {46 vars in 754 bytes} [Sat Nov  9 13:16:18 2019] GET /ht2048/on/?on=up => generated 70 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[8, 2, 4, 8], [0, 0, 0, 32], [0, 0, 2, 2], [0, 0, 0, 0]]
+{'val': [[8, 2, 4, 8], [32, 0, 0, 0], [4, 0, 0, 0], [0, 0, 2, 0], 60]}
+[pid: 14746|app: 0|req: 25/25] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:18 2019] GET /ht2048/on/?on=left => generated 70 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[8, 2, 4, 8], [32, 0, 0, 0], [4, 0, 0, 0], [0, 0, 2, 0]]
+{'val': [[0, 0, 0, 2], [8, 0, 0, 0], [32, 0, 4, 0], [4, 2, 2, 8], 62]}
+[pid: 14746|app: 0|req: 26/26] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:18 2019] GET /ht2048/on/?on=down => generated 70 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 0, 2], [8, 0, 0, 0], [32, 0, 4, 0], [4, 2, 2, 8]]
+{'val': [[0, 0, 0, 2], [0, 0, 2, 8], [0, 0, 32, 4], [0, 4, 4, 8], 64]}
+[pid: 14746|app: 0|req: 27/27] 127.0.0.1 () {46 vars in 760 bytes} [Sat Nov  9 13:16:18 2019] GET /ht2048/on/?on=right => generated 70 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 0, 2], [0, 0, 2, 8], [0, 0, 32, 4], [0, 4, 4, 8]]
+{'val': [[2, 4, 2, 2], [0, 0, 32, 8], [0, 0, 4, 4], [0, 0, 0, 8], 66]}
+[pid: 14746|app: 0|req: 28/28] 127.0.0.1 () {46 vars in 754 bytes} [Sat Nov  9 13:16:18 2019] GET /ht2048/on/?on=up => generated 70 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 4, 2, 2], [0, 0, 32, 8], [0, 0, 4, 4], [0, 0, 0, 8]]
+{'val': [[2, 4, 4, 0], [32, 8, 0, 0], [8, 0, 0, 0], [8, 0, 2, 0], 68]}
+[pid: 14746|app: 0|req: 29/29] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:19 2019] GET /ht2048/on/?on=left => generated 70 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 4, 4, 0], [32, 8, 0, 0], [8, 0, 0, 0], [8, 0, 2, 0]]
+{'val': [[0, 0, 0, 2], [2, 0, 0, 0], [32, 4, 4, 0], [16, 8, 2, 0], 70]}
+[pid: 14746|app: 0|req: 30/30] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:19 2019] GET /ht2048/on/?on=down => generated 71 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 0, 2], [2, 0, 0, 0], [32, 4, 4, 0], [16, 8, 2, 0]]
+{'val': [[0, 4, 0, 2], [0, 0, 0, 2], [0, 0, 32, 8], [0, 16, 8, 2], 74]}
+[pid: 14746|app: 0|req: 31/31] 127.0.0.1 () {46 vars in 760 bytes} [Sat Nov  9 13:16:19 2019] GET /ht2048/on/?on=right => generated 71 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 4, 0, 2], [0, 0, 0, 2], [0, 0, 32, 8], [0, 16, 8, 2]]
+{'val': [[0, 4, 32, 4], [2, 16, 8, 8], [0, 0, 0, 2], [0, 0, 0, 0], 76]}
+[pid: 14746|app: 0|req: 32/32] 127.0.0.1 () {46 vars in 754 bytes} [Sat Nov  9 13:16:19 2019] GET /ht2048/on/?on=up => generated 71 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 4, 32, 4], [2, 16, 8, 8], [0, 0, 0, 2], [0, 0, 0, 0]]
+{'val': [[4, 32, 4, 2], [2, 16, 16, 0], [2, 0, 0, 0], [0, 0, 0, 0], 78]}
+[pid: 14746|app: 0|req: 33/33] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:19 2019] GET /ht2048/on/?on=left => generated 72 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[4, 32, 4, 2], [2, 16, 16, 0], [2, 0, 0, 0], [0, 0, 0, 0]]
+{'val': [[0, 0, 0, 0], [0, 0, 2, 0], [4, 32, 4, 0], [4, 16, 16, 2], 80]}
+[pid: 14746|app: 0|req: 34/34] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:19 2019] GET /ht2048/on/?on=down => generated 72 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 0, 0], [0, 0, 2, 0], [4, 32, 4, 0], [4, 16, 16, 2]]
+{'val': [[0, 0, 0, 2], [0, 0, 0, 2], [0, 4, 32, 4], [0, 4, 32, 2], 82]}
+[pid: 14746|app: 0|req: 35/35] 127.0.0.1 () {46 vars in 760 bytes} [Sat Nov  9 13:16:19 2019] GET /ht2048/on/?on=right => generated 71 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 0, 2], [0, 0, 0, 2], [0, 4, 32, 4], [0, 4, 32, 2]]
+{'val': [[0, 8, 64, 4], [0, 2, 0, 4], [0, 0, 0, 2], [0, 0, 0, 0], 84]}
+[pid: 14746|app: 0|req: 36/36] 127.0.0.1 () {46 vars in 754 bytes} [Sat Nov  9 13:16:20 2019] GET /ht2048/on/?on=up => generated 70 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 8, 64, 4], [0, 2, 0, 4], [0, 0, 0, 2], [0, 0, 0, 0]]
+{'val': [[8, 64, 4, 0], [2, 4, 0, 0], [2, 0, 0, 2], [0, 0, 0, 0], 86]}
+[pid: 14746|app: 0|req: 37/37] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:20 2019] GET /ht2048/on/?on=left => generated 70 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[8, 64, 4, 0], [2, 4, 0, 0], [2, 0, 0, 2], [0, 0, 0, 0]]
+{'val': [[0, 0, 0, 2], [0, 0, 0, 0], [8, 64, 0, 0], [4, 4, 4, 2], 88]}
+[pid: 14746|app: 0|req: 38/38] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:20 2019] GET /ht2048/on/?on=down => generated 70 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 0, 2], [0, 0, 0, 0], [8, 64, 0, 0], [4, 4, 4, 2]]
+{'val': [[0, 0, 0, 2], [0, 0, 0, 0], [0, 0, 8, 64], [2, 4, 8, 2], 90]}
+[pid: 14746|app: 0|req: 39/39] 127.0.0.1 () {46 vars in 760 bytes} [Sat Nov  9 13:16:20 2019] GET /ht2048/on/?on=right => generated 70 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 0, 2], [0, 0, 0, 0], [0, 0, 8, 64], [2, 4, 8, 2]]
+{'val': [[2, 4, 16, 2], [0, 0, 0, 64], [0, 0, 0, 2], [2, 0, 0, 0], 92]}
+[pid: 14746|app: 0|req: 40/40] 127.0.0.1 () {46 vars in 754 bytes} [Sat Nov  9 13:16:20 2019] GET /ht2048/on/?on=up => generated 71 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 4, 16, 2], [0, 0, 0, 64], [0, 0, 0, 2], [2, 0, 0, 0]]
+{'val': [[2, 4, 16, 2], [64, 0, 0, 0], [2, 0, 0, 0], [2, 0, 0, 2], 94]}
+[pid: 14746|app: 0|req: 41/41] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:21 2019] GET /ht2048/on/?on=left => generated 71 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 4, 16, 2], [64, 0, 0, 0], [2, 0, 0, 0], [2, 0, 0, 2]]
+{'val': [[0, 0, 0, 2], [2, 0, 0, 0], [64, 0, 0, 0], [4, 4, 16, 4], 96]}
+[pid: 14746|app: 0|req: 42/42] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:21 2019] GET /ht2048/on/?on=down => generated 71 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 0, 2], [2, 0, 0, 0], [64, 0, 0, 0], [4, 4, 16, 4]]
+{'val': [[0, 0, 0, 2], [0, 0, 0, 2], [0, 2, 0, 64], [0, 8, 16, 4], 98]}
+[pid: 14746|app: 0|req: 43/43] 127.0.0.1 () {46 vars in 760 bytes} [Sat Nov  9 13:16:21 2019] GET /ht2048/on/?on=right => generated 71 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 0, 2], [0, 0, 0, 2], [0, 2, 0, 64], [0, 8, 16, 4]]
+{'val': [[0, 2, 16, 4], [0, 8, 0, 64], [0, 0, 0, 4], [2, 0, 0, 0], 100]}
+[pid: 14746|app: 0|req: 44/44] 127.0.0.1 () {46 vars in 754 bytes} [Sat Nov  9 13:16:21 2019] GET /ht2048/on/?on=up => generated 72 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 2, 16, 4], [0, 8, 0, 64], [0, 0, 0, 4], [2, 0, 0, 0]]
+{'val': [[2, 16, 4, 0], [8, 64, 0, 2], [4, 0, 0, 0], [2, 0, 0, 0], 102]}
+[pid: 14746|app: 0|req: 45/45] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:21 2019] GET /ht2048/on/?on=left => generated 72 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 16, 4, 0], [8, 64, 0, 2], [4, 0, 0, 0], [2, 0, 0, 0]]
+{'val': [[0, 2, 16, 4], [0, 8, 64, 2], [0, 0, 2, 4], [0, 0, 0, 2], 104]}
+[pid: 14746|app: 0|req: 46/46] 127.0.0.1 () {46 vars in 760 bytes} [Sat Nov  9 13:16:21 2019] GET /ht2048/on/?on=right => generated 72 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 2, 16, 4], [0, 8, 64, 2], [0, 0, 2, 4], [0, 0, 0, 2]]
+{'val': '没有变化'}
+[pid: 14746|app: 0|req: 47/47] 127.0.0.1 () {46 vars in 754 bytes} [Sat Nov  9 13:16:21 2019] GET /ht2048/on/?on=up => generated 35 bytes in 18 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 2, 16, 4], [0, 8, 64, 2], [0, 0, 2, 4], [0, 0, 0, 2]]
+{'val': [[2, 16, 4, 0], [8, 64, 2, 2], [2, 4, 0, 0], [2, 0, 0, 0], 106]}
+[pid: 14746|app: 0|req: 48/48] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:22 2019] GET /ht2048/on/?on=left => generated 72 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 16, 4, 0], [8, 64, 2, 2], [2, 4, 0, 0], [2, 0, 0, 0]]
+{'val': [[0, 0, 2, 0], [2, 16, 0, 0], [8, 64, 4, 0], [4, 4, 2, 2], 108]}
+[pid: 14746|app: 0|req: 49/49] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:22 2019] GET /ht2048/on/?on=down => generated 72 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 2, 0], [2, 16, 0, 0], [8, 64, 4, 0], [4, 4, 2, 2]]
+{'val': [[0, 2, 0, 2], [0, 0, 2, 16], [0, 8, 64, 4], [0, 0, 8, 4], 110]}
+[pid: 14746|app: 0|req: 50/50] 127.0.0.1 () {46 vars in 760 bytes} [Sat Nov  9 13:16:22 2019] GET /ht2048/on/?on=right => generated 72 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 2, 0, 2], [0, 0, 2, 16], [0, 8, 64, 4], [0, 0, 8, 4]]
+{'val': [[0, 2, 2, 2], [0, 8, 64, 16], [2, 0, 8, 8], [0, 0, 0, 0], 112]}
+[pid: 14746|app: 0|req: 51/51] 127.0.0.1 () {46 vars in 754 bytes} [Sat Nov  9 13:16:22 2019] GET /ht2048/on/?on=up => generated 72 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 2, 2, 2], [0, 8, 64, 16], [2, 0, 8, 8], [0, 0, 0, 0]]
+{'val': [[4, 2, 0, 0], [8, 64, 16, 0], [2, 16, 0, 0], [0, 2, 0, 0], 114]}
+[pid: 14746|app: 0|req: 52/52] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:22 2019] GET /ht2048/on/?on=left => generated 73 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[4, 2, 0, 0], [8, 64, 16, 0], [2, 16, 0, 0], [0, 2, 0, 0]]
+{'val': [[0, 2, 0, 0], [4, 64, 0, 0], [8, 16, 0, 2], [2, 2, 16, 0], 116]}
+[pid: 14746|app: 0|req: 53/53] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:22 2019] GET /ht2048/on/?on=down => generated 73 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 2, 0, 0], [4, 64, 0, 0], [8, 16, 0, 2], [2, 2, 16, 0]]
+{'val': [[2, 0, 0, 0], [4, 64, 2, 0], [8, 16, 2, 0], [4, 16, 0, 0], 118]}
+[pid: 14746|app: 0|req: 54/54] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:22 2019] GET /ht2048/on/?on=left => generated 73 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 0, 0, 0], [4, 64, 2, 0], [8, 16, 2, 0], [4, 16, 0, 0]]
+{'val': [[0, 0, 0, 2], [2, 4, 64, 2], [0, 8, 16, 2], [0, 0, 4, 16], 120]}
+[pid: 14746|app: 0|req: 55/55] 127.0.0.1 () {46 vars in 760 bytes} [Sat Nov  9 13:16:22 2019] GET /ht2048/on/?on=right => generated 73 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 0, 2], [2, 4, 64, 2], [0, 8, 16, 2], [0, 0, 4, 16]]
+{'val': [[2, 4, 64, 4], [2, 8, 16, 2], [0, 0, 4, 16], [0, 0, 0, 0], 122]}
+[pid: 14746|app: 0|req: 56/56] 127.0.0.1 () {46 vars in 754 bytes} [Sat Nov  9 13:16:22 2019] GET /ht2048/on/?on=up => generated 73 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 4, 64, 4], [2, 8, 16, 2], [0, 0, 4, 16], [0, 0, 0, 0]]
+{'val': [[2, 4, 64, 4], [2, 8, 16, 2], [4, 16, 0, 0], [0, 2, 0, 0], 124]}
+[pid: 14746|app: 0|req: 57/57] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:23 2019] GET /ht2048/on/?on=left => generated 73 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 4, 64, 4], [2, 8, 16, 2], [4, 16, 0, 0], [0, 2, 0, 0]]
+{'val': [[4, 4, 64, 4], [4, 8, 16, 2], [0, 16, 0, 0], [2, 2, 0, 0], 126]}
+[pid: 14746|app: 0|req: 58/58] 127.0.0.1 () {46 vars in 754 bytes} [Sat Nov  9 13:16:26 2019] GET /ht2048/on/?on=up => generated 73 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[4, 4, 64, 4], [4, 8, 16, 2], [0, 16, 0, 0], [2, 2, 0, 0]]
+{'val': [[8, 64, 4, 2], [4, 8, 16, 2], [16, 0, 0, 0], [4, 0, 0, 0], 128]}
+[pid: 14746|app: 0|req: 59/59] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:26 2019] GET /ht2048/on/?on=left => generated 73 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[8, 64, 4, 2], [4, 8, 16, 2], [16, 0, 0, 0], [4, 0, 0, 0]]
+{'val': [[8, 0, 4, 0], [4, 0, 0, 0], [16, 64, 4, 0], [4, 8, 16, 4], 132]}
+[pid: 14746|app: 0|req: 60/60] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:26 2019] GET /ht2048/on/?on=down => generated 73 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[8, 0, 4, 0], [4, 0, 0, 0], [16, 64, 4, 0], [4, 8, 16, 4]]
+{'val': [[0, 2, 8, 4], [0, 0, 0, 4], [0, 16, 64, 4], [4, 8, 16, 4], 134]}
+[pid: 14746|app: 0|req: 61/61] 127.0.0.1 () {46 vars in 760 bytes} [Sat Nov  9 13:16:26 2019] GET /ht2048/on/?on=right => generated 73 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 2, 8, 4], [0, 0, 0, 4], [0, 16, 64, 4], [4, 8, 16, 4]]
+{'val': [[4, 2, 8, 8], [0, 16, 64, 8], [2, 8, 16, 0], [0, 0, 0, 0], 136]}
+[pid: 14746|app: 0|req: 62/62] 127.0.0.1 () {46 vars in 754 bytes} [Sat Nov  9 13:16:26 2019] GET /ht2048/on/?on=up => generated 73 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[4, 2, 8, 8], [0, 16, 64, 8], [2, 8, 16, 0], [0, 0, 0, 0]]
+{'val': [[4, 2, 16, 0], [16, 64, 8, 0], [2, 8, 16, 0], [0, 2, 0, 0], 138]}
+[pid: 14746|app: 0|req: 63/63] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:27 2019] GET /ht2048/on/?on=left => generated 74 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[4, 2, 16, 0], [16, 64, 8, 0], [2, 8, 16, 0], [0, 2, 0, 0]]
+{'val': [[2, 2, 0, 0], [4, 64, 16, 0], [16, 8, 8, 0], [2, 2, 16, 0], 140]}
+[pid: 14746|app: 0|req: 64/64] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:27 2019] GET /ht2048/on/?on=down => generated 74 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 2, 0, 0], [4, 64, 16, 0], [16, 8, 8, 0], [2, 2, 16, 0]]
+{'val': [[0, 0, 2, 4], [0, 4, 64, 16], [0, 0, 16, 16], [0, 0, 4, 16], 142]}
+[pid: 14746|app: 0|req: 65/65] 127.0.0.1 () {46 vars in 760 bytes} [Sat Nov  9 13:16:27 2019] GET /ht2048/on/?on=right => generated 75 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 2, 4], [0, 4, 64, 16], [0, 0, 16, 16], [0, 0, 4, 16]]
+{'val': [[0, 4, 2, 4], [0, 0, 64, 32], [2, 0, 16, 16], [0, 0, 4, 0], 144]}
+[pid: 14746|app: 0|req: 66/66] 127.0.0.1 () {46 vars in 754 bytes} [Sat Nov  9 13:16:27 2019] GET /ht2048/on/?on=up => generated 74 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 4, 2, 4], [0, 0, 64, 32], [2, 0, 16, 16], [0, 0, 4, 0]]
+{'val': [[4, 2, 4, 0], [64, 32, 0, 0], [2, 32, 0, 0], [4, 0, 0, 2], 146]}
+[pid: 14746|app: 0|req: 67/67] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:27 2019] GET /ht2048/on/?on=left => generated 73 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[4, 2, 4, 0], [64, 32, 0, 0], [2, 32, 0, 0], [4, 0, 0, 2]]
+{'val': [[4, 0, 0, 0], [64, 0, 0, 0], [2, 2, 0, 2], [4, 64, 4, 2], 148]}
+[pid: 14746|app: 0|req: 68/68] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:27 2019] GET /ht2048/on/?on=down => generated 72 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[4, 0, 0, 0], [64, 0, 0, 0], [2, 2, 0, 2], [4, 64, 4, 2]]
+{'val': [[0, 0, 0, 4], [0, 0, 2, 64], [0, 0, 2, 4], [4, 64, 4, 2], 150]}
+[pid: 14746|app: 0|req: 69/69] 127.0.0.1 () {46 vars in 760 bytes} [Sat Nov  9 13:16:27 2019] GET /ht2048/on/?on=right => generated 72 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 0, 4], [0, 0, 2, 64], [0, 0, 2, 4], [4, 64, 4, 2]]
+{'val': [[4, 64, 4, 4], [0, 0, 4, 64], [2, 0, 0, 4], [0, 0, 0, 2], 152]}
+[pid: 14746|app: 0|req: 70/70] 127.0.0.1 () {46 vars in 754 bytes} [Sat Nov  9 13:16:28 2019] GET /ht2048/on/?on=up => generated 72 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[4, 64, 4, 4], [0, 0, 4, 64], [2, 0, 0, 4], [0, 0, 0, 2]]
+{'val': [[4, 64, 8, 0], [4, 64, 0, 0], [2, 4, 0, 0], [2, 2, 0, 0], 154]}
+[pid: 14746|app: 0|req: 71/71] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:28 2019] GET /ht2048/on/?on=left => generated 72 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[4, 64, 8, 0], [4, 64, 0, 0], [2, 4, 0, 0], [2, 2, 0, 0]]
+{'val': [[0, 0, 0, 0], [0, 128, 0, 0], [8, 4, 4, 0], [4, 2, 8, 0], 158]}
+[pid: 14746|app: 0|req: 72/72] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:28 2019] GET /ht2048/on/?on=down => generated 72 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 0, 0], [0, 128, 0, 0], [8, 4, 4, 0], [4, 2, 8, 0]]
+{'val': [[2, 0, 0, 0], [0, 0, 0, 128], [0, 0, 8, 8], [0, 4, 2, 8], 160]}
+[pid: 14746|app: 0|req: 73/73] 127.0.0.1 () {46 vars in 760 bytes} [Sat Nov  9 13:16:28 2019] GET /ht2048/on/?on=right => generated 72 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 0, 0, 0], [0, 0, 0, 128], [0, 0, 8, 8], [0, 4, 2, 8]]
+{'val': [[2, 4, 8, 128], [2, 0, 2, 16], [0, 0, 0, 0], [0, 0, 0, 0], 162]}
+[pid: 14746|app: 0|req: 74/74] 127.0.0.1 () {46 vars in 754 bytes} [Sat Nov  9 13:16:28 2019] GET /ht2048/on/?on=up => generated 73 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 4, 8, 128], [2, 0, 2, 16], [0, 0, 0, 0], [0, 0, 0, 0]]
+{'val': [[2, 4, 8, 128], [4, 16, 0, 0], [0, 0, 0, 0], [0, 0, 2, 0], 164]}
+[pid: 14746|app: 0|req: 75/75] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:28 2019] GET /ht2048/on/?on=left => generated 73 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 4, 8, 128], [4, 16, 0, 0], [0, 0, 0, 0], [0, 0, 2, 0]]
+{'val': [[0, 2, 0, 0], [0, 0, 0, 0], [2, 4, 8, 0], [4, 16, 2, 128], 166]}
+[pid: 14746|app: 0|req: 76/76] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:28 2019] GET /ht2048/on/?on=down => generated 73 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 2, 0, 0], [0, 0, 0, 0], [2, 4, 8, 0], [4, 16, 2, 128]]
+{'val': [[2, 0, 0, 2], [0, 0, 0, 0], [0, 2, 4, 8], [4, 16, 2, 128], 168]}
+[pid: 14746|app: 0|req: 77/77] 127.0.0.1 () {46 vars in 760 bytes} [Sat Nov  9 13:16:29 2019] GET /ht2048/on/?on=right => generated 73 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 0, 0, 2], [0, 0, 0, 0], [0, 2, 4, 8], [4, 16, 2, 128]]
+{'val': [[2, 2, 4, 2], [4, 16, 2, 8], [0, 0, 0, 128], [0, 2, 0, 0], 170]}
+[pid: 14746|app: 0|req: 78/78] 127.0.0.1 () {46 vars in 754 bytes} [Sat Nov  9 13:16:29 2019] GET /ht2048/on/?on=up => generated 73 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 2, 4, 2], [4, 16, 2, 8], [0, 0, 0, 128], [0, 2, 0, 0]]
+{'val': [[4, 4, 2, 0], [4, 16, 2, 8], [128, 2, 0, 0], [2, 0, 0, 0], 172]}
+[pid: 14746|app: 0|req: 79/79] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:29 2019] GET /ht2048/on/?on=left => generated 73 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[4, 4, 2, 0], [4, 16, 2, 8], [128, 2, 0, 0], [2, 0, 0, 0]]
+{'val': [[2, 0, 0, 0], [8, 4, 0, 0], [128, 16, 0, 0], [2, 2, 4, 8], 174]}
+[pid: 14746|app: 0|req: 80/80] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:29 2019] GET /ht2048/on/?on=down => generated 73 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 0, 0, 0], [8, 4, 0, 0], [128, 16, 0, 0], [2, 2, 4, 8]]
+{'val': [[0, 0, 0, 2], [0, 0, 8, 4], [0, 2, 128, 16], [0, 4, 4, 8], 176]}
+[pid: 14746|app: 0|req: 81/81] 127.0.0.1 () {46 vars in 760 bytes} [Sat Nov  9 13:16:29 2019] GET /ht2048/on/?on=right => generated 73 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 0, 2], [0, 0, 8, 4], [0, 2, 128, 16], [0, 4, 4, 8]]
+{'val': [[0, 2, 8, 2], [0, 4, 128, 4], [2, 0, 4, 16], [0, 0, 0, 8], 178]}
+[pid: 14746|app: 0|req: 82/82] 127.0.0.1 () {46 vars in 754 bytes} [Sat Nov  9 13:16:29 2019] GET /ht2048/on/?on=up => generated 73 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 2, 8, 2], [0, 4, 128, 4], [2, 0, 4, 16], [0, 0, 0, 8]]
+{'val': [[2, 8, 2, 0], [4, 128, 4, 0], [2, 4, 16, 0], [8, 0, 4, 0], 182]}
+[pid: 14746|app: 0|req: 83/83] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:29 2019] GET /ht2048/on/?on=left => generated 73 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 8, 2, 0], [4, 128, 4, 0], [2, 4, 16, 0], [8, 0, 4, 0]]
+{'val': [[2, 0, 2, 0], [4, 8, 4, 0], [2, 128, 16, 0], [8, 4, 4, 2], 184]}
+[pid: 14746|app: 0|req: 84/84] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:30 2019] GET /ht2048/on/?on=down => generated 73 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 0, 2, 0], [4, 8, 4, 0], [2, 128, 16, 0], [8, 4, 4, 2]]
+{'val': [[0, 2, 0, 4], [0, 4, 8, 4], [0, 2, 128, 16], [0, 8, 8, 2], 186]}
+[pid: 14746|app: 0|req: 85/85] 127.0.0.1 () {46 vars in 760 bytes} [Sat Nov  9 13:16:30 2019] GET /ht2048/on/?on=right => generated 73 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 2, 0, 4], [0, 4, 8, 4], [0, 2, 128, 16], [0, 8, 8, 2]]
+{'val': [[2, 2, 8, 8], [0, 4, 128, 16], [0, 2, 8, 2], [0, 8, 0, 0], 188]}
+[pid: 14746|app: 0|req: 86/86] 127.0.0.1 () {46 vars in 754 bytes} [Sat Nov  9 13:16:30 2019] GET /ht2048/on/?on=up => generated 73 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 2, 8, 8], [0, 4, 128, 16], [0, 2, 8, 2], [0, 8, 0, 0]]
+{'val': [[4, 16, 2, 0], [4, 128, 16, 0], [2, 8, 2, 0], [8, 0, 0, 0], 190]}
+[pid: 14746|app: 0|req: 87/87] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:30 2019] GET /ht2048/on/?on=left => generated 74 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[4, 16, 2, 0], [4, 128, 16, 0], [2, 8, 2, 0], [8, 0, 0, 0]]
+{'val': [[2, 0, 0, 0], [8, 16, 2, 0], [2, 128, 16, 0], [8, 8, 2, 0], 192]}
+[pid: 14746|app: 0|req: 88/88] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:30 2019] GET /ht2048/on/?on=down => generated 74 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 0, 0, 0], [8, 16, 2, 0], [2, 128, 16, 0], [8, 8, 2, 0]]
+{'val': [[0, 0, 0, 2], [0, 8, 16, 2], [0, 2, 128, 16], [2, 0, 16, 2], 194]}
+[pid: 14746|app: 0|req: 89/89] 127.0.0.1 () {46 vars in 760 bytes} [Sat Nov  9 13:16:30 2019] GET /ht2048/on/?on=right => generated 75 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 0, 2], [0, 8, 16, 2], [0, 2, 128, 16], [2, 0, 16, 2]]
+{'val': [[2, 8, 16, 4], [0, 2, 128, 16], [0, 0, 16, 2], [4, 0, 0, 0], 198]}
+[pid: 14746|app: 0|req: 90/90] 127.0.0.1 () {46 vars in 754 bytes} [Sat Nov  9 13:16:30 2019] GET /ht2048/on/?on=up => generated 75 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 8, 16, 4], [0, 2, 128, 16], [0, 0, 16, 2], [4, 0, 0, 0]]
+{'val': [[2, 8, 16, 4], [2, 128, 16, 2], [16, 2, 0, 0], [4, 0, 0, 0], 200]}
+[pid: 14746|app: 0|req: 91/91] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:31 2019] GET /ht2048/on/?on=left => generated 75 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 8, 16, 4], [2, 128, 16, 2], [16, 2, 0, 0], [4, 0, 0, 0]]
+{'val': [[0, 0, 2, 0], [4, 8, 0, 0], [16, 128, 0, 4], [4, 2, 32, 2], 202]}
+[pid: 14746|app: 0|req: 92/92] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:31 2019] GET /ht2048/on/?on=down => generated 74 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 2, 0], [4, 8, 0, 0], [16, 128, 0, 4], [4, 2, 32, 2]]
+{'val': [[0, 0, 0, 2], [0, 0, 4, 8], [2, 16, 128, 4], [4, 2, 32, 2], 204]}
+[pid: 14746|app: 0|req: 93/93] 127.0.0.1 () {46 vars in 760 bytes} [Sat Nov  9 13:16:31 2019] GET /ht2048/on/?on=right => generated 74 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 0, 2], [0, 0, 4, 8], [2, 16, 128, 4], [4, 2, 32, 2]]
+{'val': [[2, 16, 4, 2], [4, 2, 128, 8], [0, 0, 32, 4], [0, 2, 0, 2], 206]}
+[pid: 14746|app: 0|req: 94/94] 127.0.0.1 () {46 vars in 754 bytes} [Sat Nov  9 13:16:31 2019] GET /ht2048/on/?on=up => generated 74 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 16, 4, 2], [4, 2, 128, 8], [0, 0, 32, 4], [0, 2, 0, 2]]
+{'val': [[2, 16, 4, 2], [4, 2, 128, 8], [32, 4, 0, 0], [4, 2, 0, 0], 208]}
+[pid: 14746|app: 0|req: 95/95] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:31 2019] GET /ht2048/on/?on=left => generated 74 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 16, 4, 2], [4, 2, 128, 8], [32, 4, 0, 0], [4, 2, 0, 0]]
+{'val': [[2, 16, 2, 0], [4, 2, 0, 0], [32, 4, 4, 2], [4, 2, 128, 8], 210]}
+[pid: 14746|app: 0|req: 96/96] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:31 2019] GET /ht2048/on/?on=down => generated 74 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 16, 2, 0], [4, 2, 0, 0], [32, 4, 4, 2], [4, 2, 128, 8]]
+{'val': [[0, 2, 16, 2], [2, 0, 4, 2], [0, 32, 8, 2], [4, 2, 128, 8], 212]}
+[pid: 14746|app: 0|req: 97/97] 127.0.0.1 () {46 vars in 760 bytes} [Sat Nov  9 13:16:31 2019] GET /ht2048/on/?on=right => generated 74 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 2, 16, 2], [2, 0, 4, 2], [0, 32, 8, 2], [4, 2, 128, 8]]
+{'val': [[2, 2, 16, 4], [4, 32, 4, 2], [2, 2, 8, 8], [0, 0, 128, 0], 214]}
+[pid: 14746|app: 0|req: 98/98] 127.0.0.1 () {46 vars in 754 bytes} [Sat Nov  9 13:16:32 2019] GET /ht2048/on/?on=up => generated 74 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 2, 16, 4], [4, 32, 4, 2], [2, 2, 8, 8], [0, 0, 128, 0]]
+{'val': [[4, 16, 4, 0], [4, 32, 4, 2], [4, 16, 2, 0], [128, 0, 0, 0], 216]}
+[pid: 14746|app: 0|req: 99/99] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:32 2019] GET /ht2048/on/?on=left => generated 75 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[4, 16, 4, 0], [4, 32, 4, 2], [4, 16, 2, 0], [128, 0, 0, 0]]
+{'val': [[2, 0, 0, 0], [4, 16, 0, 0], [8, 32, 8, 0], [128, 16, 2, 2], 218]}
+[pid: 14746|app: 0|req: 100/100] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:32 2019] GET /ht2048/on/?on=down => generated 75 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[2, 0, 0, 0], [4, 16, 0, 0], [8, 32, 8, 0], [128, 16, 2, 2]]
+{'val': [[0, 0, 2, 2], [0, 0, 4, 16], [0, 8, 32, 8], [0, 128, 16, 4], 220]}
+[pid: 14746|app: 0|req: 101/101] 127.0.0.1 () {46 vars in 760 bytes} [Sat Nov  9 13:16:32 2019] GET /ht2048/on/?on=right => generated 75 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 2, 2], [0, 0, 4, 16], [0, 8, 32, 8], [0, 128, 16, 4]]
+{'val': '没有变化'}
+[pid: 14746|app: 0|req: 102/102] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:32 2019] GET /ht2048/on/?on=down => generated 35 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+这是 on ----------------
+cookie my_var1 =  没有值!
+nadao map [[0, 0, 2, 2], [0, 0, 4, 16], [0, 8, 32, 8], [0, 128, 16, 4]]
+{'val': [[4, 0, 0, 0], [4, 16, 0, 0], [8, 32, 8, 2], [128, 16, 4, 0], 222]}
+[pid: 14746|app: 0|req: 103/103] 127.0.0.1 () {46 vars in 758 bytes} [Sat Nov  9 13:16:32 2019] GET /ht2048/on/?on=left => generated 75 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+get nadao map [[4, 0, 0, 0], [4, 16, 0, 0], [8, 32, 8, 2], [128, 16, 4, 0]]
+start nadao map [[0, 0, 0, 0], [0, 0, 0, 2], [0, 0, 0, 4], [0, 0, 0, 0]]
+[pid: 14746|app: 0|req: 104/104] 127.0.0.1 () {46 vars in 792 bytes} [Sat Nov  9 13:16:39 2019] GET /ht2048/ => generated 13267 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 279 bytes (1 switches on core 1)
+[pid: 14746|app: 0|req: 105/105] 127.0.0.1 () {44 vars in 716 bytes} [Sat Nov  9 13:16:39 2019] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
