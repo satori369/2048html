@@ -136,6 +136,7 @@
 		
 		
 		<script>
+			new_cookie();
 			bianse();
 			var btn = document.getElementById("btn");
 			
@@ -170,7 +171,6 @@
 							break;
 					}
 				};
-
 			function getXhrP_up(){
 				//1.创建xhr
 				var xhr = createXhr();
@@ -185,7 +185,6 @@
 						//字符串转换json对象
 						var arr = JSON.parse(arr).val;
 						console.log(arr)
-
 						if(arr == '没有变化'){
 							console.log('没有变化')
 						}else if(arr[arr.length-1]=='over'){
@@ -196,7 +195,7 @@
 								setTimeout("over()",100); //延迟1秒
 							})
 						}else{
-							// Setcookie('arr',arr);
+							Setcookie('arr',arr);
 							plusmap(arr);
 							console.log('上键');
 						}
@@ -212,9 +211,32 @@
 				var expdate = new Date();   //初始化时间
 				expdate.setTime(expdate.getTime() + 30 * 60 * 1000);   //时间单位毫秒
 				document.cookie = name+"="+value+";expires="+expdate.toGMTString()+";path=/";
-
 			};
-
+			
+			function new_cookie (){ 
+				//设置名称为name,值为value的Cookie
+				var expdate = new Date();   //初始化时间
+				var x1 = document.getElementById('x1').innerText;
+				var x2 = document.getElementById('x2').innerText;
+				var x3 = document.getElementById('x3').innerText;
+				var x4 = document.getElementById('x4').innerText;
+				var x5 = document.getElementById('x5').innerText;
+				var x6 = document.getElementById('x6').innerText;
+				var x7 = document.getElementById('x7').innerText;
+				var x8 = document.getElementById('x8').innerText;
+				var x9 = document.getElementById('x9').innerText;
+				var x10 = document.getElementById('x10').innerText;
+				var x11 = document.getElementById('x11').innerText;
+				var x12 = document.getElementById('x12').innerText;
+				var x13 = document.getElementById('x13').innerText;
+				var x14 = document.getElementById('x14').innerText;
+				var x15 = document.getElementById('x15').innerText;
+				var x16 = document.getElementById('x16').innerText;
+				value = [x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16]
+				expdate.setTime(expdate.getTime() + 30 * 60 * 1000);   //时间单位毫秒
+				document.cookie = "arr="+value+";expires="+expdate.toGMTString()+";path=/";
+			};
+			
 			function getXhrP_down(){
 				//1.创建xhr
 				var xhr = createXhr();
@@ -239,6 +261,7 @@
 								setTimeout("over()",100); //延迟1秒
 							})
 						}else{
+							Setcookie('arr',arr);
 							plusmap(arr);
 							console.log('下键');
 						}
@@ -272,6 +295,7 @@
 								setTimeout("over()",100); //延迟1秒
 							})
 						}else{
+							Setcookie('arr',arr);
 							plusmap(arr);
 							console.log('左键');
 						}
@@ -305,6 +329,8 @@
 									setTimeout("over()",100); //延迟1秒
 								})
 							}else{
+								console.log(typeof arr)
+								Setcookie('arr',arr);
 								plusmap(arr);
 								console.log('右键');
 							}

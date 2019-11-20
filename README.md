@@ -1,7 +1,8 @@
 ##2048html版本
 
 ```
-
+v1.0 单机版
+v2.0 可以多人并发操作
 
 uwsgi部署 uwsgi.ini
 [uwsgi]

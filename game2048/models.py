@@ -9,3 +9,4 @@ class Top_ten(models.Model):
 
     class Meta:
         db_table = 'top_ten'
+        ordering = ['result']
