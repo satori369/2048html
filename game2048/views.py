@@ -89,6 +89,7 @@ def top_ten_add(request):
 
     if request.method == 'GET':
         num = request.GET['num']
+        num = int(num[:-1])
         name = request.GET['name']
         Top_ten.objects.create(nickname=name,result=num)
 
@@ -98,7 +99,8 @@ def top_ten_add(request):
 def top_ten(request):
 
     print('topten ok')
-    top_all = Top_ten.objects.all().order_by('result')
+    top_all = Top_ten.objects.order_by('-result')[:10]
+
     return render(request,'top_ten.html',locals())
 
 # 积分计算函数

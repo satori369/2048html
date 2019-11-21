@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17e1b81f-57b4-4360-a381-b016b42111c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ht2048.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game2048/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/game2048/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game2048/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/game2048/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ht2048/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ht2048/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/ht2048.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ht2048.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/top_ten.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/top_ten.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

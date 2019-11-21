@@ -13,28 +13,29 @@
 	</style>
 </head>
 <body>
-	<div id='ddiv'>
-		<form action="/ht2048/" method="get" style="text-align:right;">
-			<!-- {% csrf_token %} -->
-			<input type="submit" value="回到游戏" name="fanhui">
-		</form>
-    <table border="1">
-		<h2>2048排行榜TOP10</h2>
-        <tr>
-            <th>姓名</th>
-            <th>分数</th>
-            <th>时间</th>
-        </tr>
-        {% for ten in top_all %}
-        <tr>
-            <td>{{ ten.nickname }}</td>
-            <td>{{ ten.result }}</td>
-            <td>{{ ten.created_time }}</td>
-        </tr>
-        {% endfor %}
-    </table>
-	
-	</div>
-	
+	<body style="height: 500px;background: #eee;">
+		<div id='ddiv'>
+			<form action="/ht2048/" method="get" style="text-align:right;">
+				<!-- {% csrf_token %} -->
+				<input type="submit" value="回到游戏" name="fanhui">
+			</form>
+		<table border="1">
+			<h2>2048排行榜TOP10</h2>
+			<tr>
+				<th>姓名</th>
+				<th>分数</th>
+				<th>时间</th>
+			</tr>
+			{% for ten in top_all %}
+			<tr>
+				<td>{{ ten.nickname }}</td>
+				<td>{{ ten.result }}</td>
+				<td>{{ ten.created_time }}</td>
+			</tr>
+			{% endfor %}
+		</table>
+		
+		</div>
+	</body>
 </body>
 </html>

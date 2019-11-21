@@ -1,0 +1,39 @@
+body {
+			background: #eee;
+		}
+        .hd{
+            display:inline-block;
+            width: 80px;
+            height: 80px;
+            padding: 5px;
+            margin: -3px;
+            border: 1px solid #ccc;
+            background-color: #ede0c8;
+            position: relative;
+            text-align:center;
+        }
+		#h2{
+			color: #776e65;
+			font-size:50px;
+			/* display: inline-block; */
+		}
+		#bd{
+			position: absolute;
+		    text-align: right;
+			left: 32%;
+		}
+        .hd span{
+            font-size:50px;
+			color: #776e65;
+        }
+		#fm{
+			display: inline-block;
+		}
+		#pp{
+			color: #776e65;
+		}
+		#p2{
+			display: inline-block;
+			text-align: left;
+			color: darkorange;
+		}
