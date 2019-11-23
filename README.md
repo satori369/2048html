@@ -1,8 +1,12 @@
 ##2048html版本
 
 ```
-v1.0 单机版
-v2.0 可以多人并发操作
+v1.0 单机版上线 
+v1.1 增加排行榜功能
+v1.2 细节优化完善(去0,页面优化,代码重构,做好备注,...)
+v2.0 实现多人并发操作
+v2.1 移动端滑动操作
+v2.2 增加点击按钮操作方便移动端
 
 uwsgi部署 uwsgi.ini
 [uwsgi]
@@ -18,6 +22,7 @@ master=true
 
 
 nginx 配置 
+vim /etc/nginx/sites-available/default
 # 在server节点下添加新的location项，指向uwsgi的ip与端口。
 server {
     ...
@@ -54,6 +59,7 @@ nginx配置静态文件无效时
 
 重启uwsgi
 sudo uwsgi --stop uwsgi.pid
+sudo uwsgi --ini uwsgi.ini
 sudo uwsgi --ini 项目文件夹/uwsgi.ini
 操作nginx
 sudo /etc/init.d/nginx restart

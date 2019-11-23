@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>2048正式版v2.1</title>
 	
 	<script src="/static/js/common.js" type="text/javascript" charset="utf-8"></script>
 	<script src="/static/js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
@@ -75,11 +75,32 @@
 				<span id='x16'>{{ array.3.3 }}</span>
 			</div>
 			<br>
-			<p id='p2'>
+
+			<br>
+
+			<button id="btup">上
+			</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<br>
+			<button id="btleft">左</button>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<button id="btright">右
+			</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<br>
+			<button id="btdown">下
+			</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+			<br>
+			<br>
+			<p class='p2'>
 				游戏说明:'上,下,左,右'或'w,a,s,d'控制移动即可;
 			</p>
-        </div>
-		<br>
+			<br>
+			<p class='p2'>
+				移动端可滑动屏幕或点击按钮;
+			</p>
+			<br>
+			<p class='p2'>本项目仅供个人学习使用;</p>
+		</div>
 		<meta name="viewport" content="target-densitydpi=320,width=640,user-scalable=no">
 		
 		<script>
@@ -89,6 +110,18 @@
 			btn.onclick = function(){
 				location.reload();
 			}
+			document.getElementById('btup').addEventListener('click', function(){
+			getXhrP_up();
+			});
+			document.getElementById('btleft').addEventListener('click', function(){
+			getXhrP_left();
+			});
+			document.getElementById('btright').addEventListener('click', function(){
+			getXhrP_right();
+			});
+			document.getElementById('btdown').addEventListener('click', function(){
+			getXhrP_down();
+			});
 		</script>
 		<!-- 移动端 -->
 		<script type="text/javascript">

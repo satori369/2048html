@@ -48,7 +48,7 @@ def on(request):
     array.append(cook_arr[12:16])
     print(array)
 
-    # v1.0版本处理方案,深拷贝地图做到并发  ->失败(无法识别游览器用户)  解决方案(cookie)
+    # v1.2版本处理方案,深拷贝地图做到并发  ->失败(无法识别游览器用户)  解决方案(cookie)
     # array = arr_map()
     # print('nadao map',array)
 
